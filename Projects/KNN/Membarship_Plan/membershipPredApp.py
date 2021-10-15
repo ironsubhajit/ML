@@ -26,6 +26,10 @@ if __name__ == '__main__':
     panedwindow = ttk.Panedwindow(root, orient=tk.HORIZONTAL)
     panedwindow.pack(fill=tk.BOTH, expand=True)
 
-
+    # Create Frames to panedwindow
+    frame1 = ttk.Frame(panedwindow, width=250, height=250, relief=tk.SUNKEN)
+    frame2 = ttk.Frame(panedwindow, width=250, height=250, relief=tk.SUNKEN)
+    panedwindow.add(frame1, weight=1)
+    panedwindow.add(frame2, weight=1)
 
     root.mainloop()
